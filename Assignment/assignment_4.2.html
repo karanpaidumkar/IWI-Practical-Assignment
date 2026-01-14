@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiline String Example</title>
+</head>
+<body>
+
+<h2>Multiline String Using Template Literals</h2>
+
+<div id="output"></div>
+
+<script>
+
+    let message = `
+This is line one.
+This is line two.
+This is line three.
+`;
+
+    document.getElementById("output").innerHTML =
+        message.replace(/\n/g, "<br>");
+</script>
+
+</body>
+</html>

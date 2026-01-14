@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Duplicates</title>
+</head>
+<body>
+
+<h2>Remove Duplicate Values From an Array</h2>
+
+<div id="output"></div>
+
+<script>
+    let numbers = [10, 20, 10, 30, 20, 40, 50 ,50 , 30];
+
+    let uniqueNumbers = [...new Set(numbers)];
+
+    document.getElementById("output").innerHTML =
+        "Original Array: " + numbers + "<br>" +
+        "Array Without Duplicates: " + uniqueNumbers;
+</script>
+
+</body>
+</html>

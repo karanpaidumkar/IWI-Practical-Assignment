@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A HTML Form</title>
+</head>
+
+<body>
+    <form action="\submit.php">
+        <label name="name"> Enter your Name:-
+            <input type="text" placeholder="enter full name" required>
+        </label><br><br>
+        <label name="email" autofocus=""> Enter your Email:-
+            <input type="email" placeholder="example@gmail.com" required>
+        </label><br><br>
+        <label name="gender" autofocus> Select your Gender:-
+            <br> <input type="radio" name="gender" value="Male"> Male
+            <br> <input type="radio" name="gender" value="Female"> Female
+            <br> <input type="radio" name="gender" value="Other"> Other
+        </label> <br><br>
+        Select your Favourite Subjects:-
+        <select name="subject" required autofocus>
+            <option value="" disabled selected>--Select a Subject--</option>
+            <option value="Maths">Maths</option>
+            <option value="Science">Science</option>
+            <option value="English">English</option>
+            <option value="Computer">Computer</option>
+            <option value="History">History</option>
+        </select><br><br>
+        </label>
+        <h4>Comments</h4>
+        <textarea name="comment" id="comment" maxlength="300" rows="5" cols="40"
+            placeholder="Enter your comments (max 300 characters)"></textarea><br><br>
+        <label name="submit">
+            <input type="submit" required autofocus>
+        </label>
+    </form>
+</body>
+
+</html>

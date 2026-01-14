@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Count Even and Odd Numbers</title>
+</head>
+<body>
+
+<h2>Count Even and Odd Numbers in an Array</h2>
+
+<div id="result"></div>
+
+<script>
+    let numbers = [10, 15, 20, 25, 30, 33, 42];
+
+    let evenCount = 0;
+    let oddCount = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 0) {
+            evenCount++;
+        } else {
+            oddCount++;
+        }
+    }
+
+    document.getElementById("result").innerHTML =
+        "Array: " + numbers + "<br>" +
+        "Total Even Numbers: " + evenCount + "<br>" +
+        "Total Odd Numbers: " + oddCount;
+</script>
+
+</body>
+</html>

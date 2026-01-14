@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation & Transitions</title>
+    <style>
+        body {
+            background-color: #161616;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            margin-left: 80px;
+            margin-top: 350px;
+            padding: 2em 4em;
+            background-color: #161a20;
+            border: none;
+            color: #f0f0f0;
+            border-radius: 1000px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button::after{
+            content: '';
+            position: absolute;
+            height: 107%;
+            width: 103%;
+            border-radius: 1000px;
+            background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+            z-index: -1;
+            transition: 1s ease-in-out;
+        }
+
+        button:hover{
+            z-index: 0;
+            box-shadow: 40px 2px 1000px #e100ff , -40px 2px 1000px #008cff;
+            transition: 1s ease-in-out;
+            transform: scale(1.4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hover">
+        <h2>CSS animation and Transition</h2>
+        <button>HOVER ME!</button>
+    </div>
+</body>
+
+</html>
